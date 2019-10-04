@@ -19,7 +19,7 @@ if __name__ == "__main__":
             data=my_dict).json()['auth_token']
     except KeyError:
         print('Please enter the correct credentials')
-        exit()
+        sys.exit()
     project = requests.get(
         'https://intranet.hbtn.io/projects/{}.json?auth_token={}'.format(
             sys.argv[3], auth_token))
