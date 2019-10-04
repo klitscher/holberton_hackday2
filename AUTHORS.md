@@ -1,9 +1,9 @@
-[Kyle Litscher](github.com/klitscher)
+[Kyle Litscher](https://github.com/klitscher)
 
-[Jared Ratner](github.com/Orangeb0lt)
+[Jared Ratner](https://github.com/Orangeb0lt)
 
-[Anthony Le](github.com/HausCloud)
+[Anthony Le](https://github.com/HausCloud)
 
-[Nathan Peterson](github.com/BlueExcess)
+[Nathan Peterson](https://github.com/BlueExcess)
 
-[Mia Morton](github.com/dracomindz)
+[Mia Morton](https://github.com/dracomindz)
