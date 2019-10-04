@@ -58,7 +58,7 @@ def LOTC(project_num, api_key, hbtn_email, password):
                 print('\x1b[5;37;41m' +
                       'Fail: You must be from San Francisco or Bogota' +
                       '\x1b[0m')
-                failed_tasks.append(task_id)
+                failed_tasks.append(count)
 
         print()
     return set(failed_tasks)
