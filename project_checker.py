@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 
-if __name__ == "__main__":
-    import requests
-    import sys
-    import time
-    import getpass
 
-    if len(sys.argv) != 4:
-        print("Usage: ./python.py '<email>'"
-              "'<api_key>' '<project_number>")
-    password = getpass.getpass('Password: ')
-    my_dict = {'email': sys.argv[1], 'password': password,
-               'api_key': sys.argv[2], 'scope': 'checker'}
+import requests
+import sys
+import time
+import getpass
+
+
+def LOTC(hbtn_email, password, api_key):
+    # if len(sys.argv) != 4:
+    #     print("Usage: ./python.py '<email>'"
+    #           "'<api_key>' '<project_number>")
+    # password = getpass.getpass('Password: ')
+    my_dict = {'email': hbtn_email, 'password': password,
+               'api_key': api_key, 'scope': 'checker'}
 
     try:
         auth_token = requests.post(
