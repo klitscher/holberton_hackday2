@@ -7,7 +7,7 @@ import time
 import getpass
 
 
-def LOTC(hbtn_email, password, api_key):
+def LOTC(project_num, api_key, hbtn_email, password):
     # if len(sys.argv) != 4:
     #     print("Usage: ./python.py '<email>'"
     #           "'<api_key>' '<project_number>")
@@ -24,7 +24,7 @@ def LOTC(hbtn_email, password, api_key):
         exit()
     project = requests.get(
         'https://intranet.hbtn.io/projects/{}.json?auth_token={}'.format(
-            sys.argv[3], auth_token))
+            project_num, auth_token))
     task_id_list = []
     task_title_list = []
     for task in project.json()['tasks']:
