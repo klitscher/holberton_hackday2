@@ -31,6 +31,7 @@ def LOTC(hbtn_email, password, api_key):
         task_id_list.append(task['id'])
         task_title_list.append(task['title'])
 
+    failed_tasks = []
     for count, task_id in enumerate(task_id_list):
         print('\x1b[1m' + 'Task: {} Title: {}'.format(
             count, task_title_list[count]) + '\x1b[0m')
@@ -57,4 +58,7 @@ def LOTC(hbtn_email, password, api_key):
                 print('\x1b[5;37;41m' +
                       'Fail: You must be from San Francisco or Bogota' +
                       '\x1b[0m')
+                failed_tasks.append(task_id)
+
         print()
+    return set(failed_tasks)
