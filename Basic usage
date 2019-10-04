@@ -1,0 +1,2 @@
+Basic Usage: './project_checker.py <schoolemail> <apiKey> <projectnumber(last digits on url)>'
+Then asks for your shcool site password
